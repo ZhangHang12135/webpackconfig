@@ -1,0 +1,20 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "webpack 学习",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack -c ./demo/webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "zhanghang12135",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
