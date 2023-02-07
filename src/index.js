@@ -11,7 +11,7 @@ function component() {
 
 
 
-    btn.innerHTML = 'Click me and check the console!';
+    btn.innerHTML = 'Click me and check2 the console!';
     btn.onclick = printMe;
   
     element.appendChild(btn);
