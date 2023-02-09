@@ -1,20 +1,16 @@
-import _ from 'lodash';
-import printMe from './print.js';
 
-
+import { cube } from './math.js';
+if (process.env.NODE_ENV !== 'production') {
+    console.log('Looks like we are in development mode!');
+  }
 function component() {
-    const element = document.createElement('div');
-    const btn = document.createElement('button');
-    // lodash（目前通过一个 script 引入）对于执行这一行是必需的
-    element.innerHTML = _.join(['Hello2ww', 'webpack'], ' ');
-    element.classList.add('hello');
+    const element = document.createElement('pre');
+    
+    element.innerHTML = [
+        'Hello webpack!',
+        '5 cubed22 is equal to ' + cube(5)
+      ].join('\n\n');
 
-
-
-    btn.innerHTML = 'Click me and check2 the console!';
-    btn.onclick = printMe;
-  
-    element.appendChild(btn);
     return element;
 }
 

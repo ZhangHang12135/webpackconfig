@@ -4,11 +4,12 @@
   "description": "webpack 学习",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack -c ./demo/webpack.config.js",
+    "build": "webpack -c ./demo/webpack.prod.js",
     "watch": "webpack -c ./demo/webpack.config.js",
-    "start": "webpack serve --open -c ./demo/webpack.config.js",
+    "start": "webpack serve --open -c ./demo/webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "sideEffects": false,
   "keywords": [
     "webpack"
   ],
@@ -23,6 +24,7 @@
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
-    "webpack-dev-server": "^4.11.1"
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
   }
 }
