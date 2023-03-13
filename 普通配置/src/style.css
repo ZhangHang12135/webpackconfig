@@ -1,0 +1,8 @@
+.hello {
+    color: red;
+  }
+.bg {
+    height: 100px;
+    width: 200px;
+    background: url('./asset/img.jpeg');
+}
