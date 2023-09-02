@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@babel/generator": "^7.22.10",
+    "@babel/parser": "^7.22.11",
+    "@babel/traverse": "^7.22.11",
+    "tapable": "^2.2.1"
+  },
+  "name": "mywebpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
